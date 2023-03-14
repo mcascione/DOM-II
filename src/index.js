@@ -14,6 +14,17 @@ window.addEventListener('copy', () => {
     })
 });
 
+window.addEventListener('keydown', evt => { 
+    if (evt.key === 'Escape'){
+        document.body.innerHTML = '<h1>Press Refresh!</h1> ';
+    }
+})
+
+document.body.addEventListener('mousemove', evt => {
+    const {clientX, clientY} = evt;
+    // console.log(`mouse is at ${clientX} and ${clientY}`);
+});
+
 document.body.addEventListener('dblclick', evt => {
     evt.target.outerHTML = '';
 });
