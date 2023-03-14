@@ -4,7 +4,7 @@ import './less/index.less'
 
 window.onload = function () {
     const heading = document.querySelector('.logo-heading');
-    heading.textContent = "Welcome to Fun Bus";
+    heading.textContent = "All Aboard";
 }
 
 window.addEventListener('copy', () => {
@@ -12,6 +12,10 @@ window.addEventListener('copy', () => {
     .then(text => {
         console.log(text)
     })
+});
+
+document.body.addEventListener('dblclick', evt => {
+    evt.target.outerHTML = '';
 });
 
 const pickDestinationImg = document.querySelector('.content-destination img');
