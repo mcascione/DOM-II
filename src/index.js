@@ -4,9 +4,15 @@ import './less/index.less'
 
 window.onload = function () {
     const heading = document.querySelector('.logo-heading');
-    console.log(heading);
     heading.textContent = "Welcome to Fun Bus";
 }
+
+window.addEventListener('copy', () => {
+    navigator.clipboard.readText()
+    .then(text => {
+        console.log(text)
+    })
+});
 
 const pickDestinationImg = document.querySelector('.content-destination img');
 
