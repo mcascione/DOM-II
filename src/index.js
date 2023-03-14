@@ -14,6 +14,22 @@ const adventureAwaitsImg = document.querySelector('.img-content');
 
 adventureAwaitsImg.addEventListener('wheel', (evt) => {
     evt.target.style.borderRadius = ('50%');
+    setTimeout(() => {
+        evt.target.style.borderRadius = ('10%');
+      },1000);
 });
+
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        button.style.backgroundColor = 'goldenrod';
+    });
+    button.addEventListener('mouseout', () => {
+        button.style.backgroundColor = '#17A2B8'
+    })
+});
+
+
 
 
