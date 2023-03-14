@@ -59,5 +59,16 @@ buttons.forEach((button) => {
 });
 
 
+const destinations = document.querySelectorAll('.destination');
+
+for (let destination of destinations){
+    destination.addEventListener('mouseenter', () => {
+        destination.style.fontWeight = 'bold';
+    })
+    destination.addEventListener('mouseleave', () => {
+        destination.style.fontWeight = 'initial';
+    })
+}
+
 
 
