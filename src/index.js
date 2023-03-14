@@ -1,6 +1,13 @@
 import './less/index.less'
 
 // Your code goes here!
+
+window.onload = function () {
+    const heading = document.querySelector('.logo-heading');
+    console.log(heading);
+    heading.textContent = "Welcome to Fun Bus";
+}
+
 const pickDestinationImg = document.querySelector('.content-destination img');
 
 pickDestinationImg.addEventListener('mouseover', (evt) => {   
